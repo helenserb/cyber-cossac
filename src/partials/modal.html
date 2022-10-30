@@ -1,25 +1,59 @@
 <section class="section">
-  <div class="backdrop" data-modal>
+  <!-- <button type="button" data-modal-open>start modal</button> -->
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__closebtn" data-modal-close>
         <svg class="modal__close">
-            <use href="./svg/icons.svg#icon-close"></use>
+          <use href="./svg/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <strong class="modal__title">Order Form</strong>
       <form action="#" class="form">
+        <strong class="modal__title">Order Form</strong>
         <label class="form__field"
           ><span class="form__title">Name</span>
-          <input type="text" name="name" placeholder="Your name" class="field__input" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            class="field__input"
+            required
+            pattern="^[a-zA-Z]+"
+          />
+          <p class="field__error">
+            &#9888; The name must be between 3 and 25 characters
+          </p>
         </label>
         <label class="form__field"
           ><span class="form__title">Phone number</span>
-          <input type="tel" name="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" class="field__input" required />
-        </label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            class="field__input"
+            required
+            minlength="8"
+            maxlength="14"
+            pattern="^(?=.*\d)(?!.*\s).*$"
+          />
+          <p class="field__error">
+            &#9888; This phone must be in the format 099 000 00 00
+          </p></label
+        >
         <label class="form__field"
           ><span class="form__title">E-mail</span>
-          <input type="email" name="mail" placeholder="example@gmail.com" class="field__input" required />
-        </label>
+          <input
+            type="email"
+            name="mail"
+            placeholder="example@gmail.com"
+            class="field__input"
+            required
+            minlength="6"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <p class="field__error">
+            &#9888; Please enter a valid email address
+          </p></label
+        >
         <button type="submit" class="agree__submitbtn">Send</button>
       </form>
     </div>
