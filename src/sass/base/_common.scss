@@ -1,0 +1,69 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    margin: 0;
+    min-width: 320px;
+
+    color: var(--primary-text-color);
+    background-color: var(--main-bcg-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    min-width: 280px;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        padding: 0 16px;
+    }
+}
+
+.section {
+    padding: 60px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.8;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}
+
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+.button{
+    width: 98px;
+    height: 32px;
+    border-radius: 30px;
+    background: var(--accent-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}

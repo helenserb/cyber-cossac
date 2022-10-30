@@ -1,0 +1,161 @@
+.header__section {
+    padding: 10px 0;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.mob-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.logo__link {
+    height: 52px;
+}
+
+.logo__icon {
+    width: 66px;
+    height: 52px;
+}
+
+.mob__icon-open {
+    width: 23px;
+    height: 16px;
+    fill: var(--additional-text-color);
+}
+
+.header__btn {
+    background: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.menu-open-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-open-btn--active {
+    .mob__icon-open {
+        fill: var(--main-color);
+    }
+}
+
+.menu-close-btn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    right: 4px;
+}
+
+.mob__icon-close {
+    width: 11px;
+    height: 11px;
+
+}
+
+.mob__menu {
+    width: 130px;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0 30px 30px;
+    background: var(--main-bcg-color);
+    position: absolute;
+    overflow: hidden;
+    top: 43px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out;
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.mob__menu-link {
+    width: 130px;
+    height: 51px;
+    padding: 16px 0 0 16px;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+    display: block;
+    color: inherit;
+    @include font (16px, 400, 1.19);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.mob__menu-item {
+
+    height: 100%;
+}
+
+// tablet header
+.tab-container {
+    display: none;
+
+    @include tablet {
+        display: flex;
+        @include font (14px, 400, 1.14);
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+}
+
+.navigation__wrap {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation__list {
+    display: flex;
+    gap: 28px;
+    margin-right: 30px;
+
+}
+
+.navigation__link {
+    height: 16px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        text-decoration-line: underline;
+        transition: color 150ms ease-in-out;
+        @include font (14px, 700, 1.14);
+
+    }
+
+}
+
+.button__oreder {
+    border: none;
+
+    &:active,
+    &:hover {
+        background: var(--btn-active);
+    }
+}
