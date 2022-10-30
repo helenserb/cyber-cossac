@@ -43,7 +43,7 @@ body {
 .section-title {
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.8;
+    line-height: 1.17;
 
     @media screen and (min-width: 768px) {
         font-size: 42px;
@@ -51,17 +51,18 @@ body {
     }
 }
 
-
-button {
-    cursor: pointer;
-    font-family: inherit;
-}
 .button{
     width: 98px;
     height: 32px;
     border-radius: 30px;
     background: var(--accent-color);
 }
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
 
 img {
     display: block;
