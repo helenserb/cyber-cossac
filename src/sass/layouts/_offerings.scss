@@ -22,10 +22,15 @@
     margin-top: 99px;
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid red;
+ 
+
+    @media screen and (max-width:767px) {
+        justify-content: center;
+        }
 
     &__img {
-    outline: 1px solid green;
+        margin-bottom: 60px;
+  
 
         @media screen and (min-width:768px) {
             max-width: 704px;
@@ -41,10 +46,11 @@
     }
 
     &__text {
-       outline: 1px solid blue;
-        
+   
+        margin-bottom: 60px;
+
         @media screen and (min-width:768px) {
-            margin-bottom: 30px;
+            margin-bottom: 100px;
             }
 
         @media screen and (min-width:1280px) {
@@ -55,24 +61,30 @@
 
     }
 
-    &__description{
-        
-    }
+    
     &__item {
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-around;
-        outline: 2px solid tomato;
+        margin-top: 28px;
+
+
+         @media screen and (min-width:768px) {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     &__list {
+
+        @media screen and (max-width:767px) {
+                max-width: 252px;
+            }
         
         @media screen and (min-width:768px) {
-            margin-right: 116px;
+            max-width: 252px;
             }
 
          @media screen and (min-width:1280px) {
-            margin-right: 67px;
+            max-width: 252px;
             }
     }
 
@@ -85,7 +97,9 @@
 }
 
 .order {
-    
+    margin-top: 20px;
+   
+
     @media screen and (min-width:768px) {
             margin-top: 40px;
             justify-content: baseline;
@@ -96,15 +110,12 @@
          }
 
     &__item{
-
      display: flex;
-     
      align-items: center;
     }
 
     &__button{
         box-sizing: border-box;
-        
         max-width: 106px;
         height: 40px;
         background: #FFFFFF;
@@ -122,13 +133,13 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 150%;
+        line-height: 1.14;
         color: #000000;
         
         }
 
     &__list-read{
-          margin-left: 24px;
+        margin-left: 24px;
         border-radius: none;
 
         @media screen and (min-width:1280px) {  
@@ -150,20 +161,23 @@
 }
 
 .section-title{
+    max-width: 280px;
 
     @media screen and (min-width:768px) {
             max-width: 526px;
         }
 }
 .section-subtitle{
-    margin-top: 20px;
-    max-width: 500px;
+    max-width: 280px;
+    margin-top: 28px;
+  
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.14;
      color: #2C2C2C;
 
     @media screen and (min-width:768px) {
             max-width: 526px;
+            margin-top: 20px;
         }
  
 }
