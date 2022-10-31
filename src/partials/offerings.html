@@ -4,35 +4,23 @@
       <picture>
         <source
           srcset="./images/appel_desk_1x.png 1x, ./images/appel_desk_2x.png 2x"
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="./images/appel_tab_1x.png 1x, ./images/appel_tab_2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/appel_mob_1x.png 1x, ./images/appel_mob_2x.png 2x"
+          media="(max-width: 767px)"
         />
         <img src="./images/appel_desk_1x.png" alt="appel" />
       </picture>
-
-      <!-- 
-      <picture>
-        <source
-          srcset="./images/appel_desk_1x.png 1x, ./images/appel_desk_2x.png 2x"
-          media="(min-width: 1200px)"
-        />
-
-        <source
-          srcset="./images/appel_tab_1x.jpg 1x, ./images/appel_tab_2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-
-        <source
-          srcset="./images/appel_1x.jpg 1x, ./images/appel_2x.jpg 2x"
-          media="(max-width: 767px)"
-        />
-
-        <img src="./images/appel_1x.jpg" alt="Marketing" />
-      </picture>
-      -->
     </div>
     <div class="offerings__text">
       <h1 class="section-title">What’s Special About Our Offerings</h1>
-      <p class="section-description">
+      <p class="section-subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
@@ -75,11 +63,10 @@
           <li class="order__list">
             <button class="order__button">Order Now</button>
           </li>
-          <!-- 
-        <li class="order_item">
-            <button class="offerings__button"> Read More >
-        </li>
-        --></ul>
+          <li class="order__list-read">
+            <a href="" class="order__link">Read More ></a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
