@@ -64,7 +64,7 @@
     
     &__item {
         margin-top: 28px;
-
+        outline: 1px solid red;
 
          @media screen and (min-width:768px) {
             margin-top: 40px;
@@ -72,22 +72,26 @@
             justify-content: space-around;
         }
     }
-
     &__list {
-
-        @media screen and (max-width:767px) {
-                max-width: 252px;
-            }
-        
-        @media screen and (min-width:768px) {
+    
+         @media screen and (max-width:767px) {
             max-width: 252px;
+           }
+        }
+
+    &__list:last-child {
+
+        @media screen and (min-width:768px) {
+            margin-left: 116px;
             }
 
          @media screen and (min-width:1280px) {
-            max-width: 252px;
+            margin-left: 67px;
             }
     }
+       
 
+        
     &__icon {
         margin-bottom: 8px;
         width: 48px;
@@ -99,7 +103,6 @@
 .order {
     margin-top: 20px;
    
-
     @media screen and (min-width:768px) {
             margin-top: 40px;
             justify-content: baseline;
