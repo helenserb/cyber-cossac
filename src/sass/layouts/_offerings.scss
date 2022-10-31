@@ -1,0 +1,72 @@
+.section__offerings {
+    background-image:
+        url(../images/bgi_off_desk.png);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    @media screen and (min-width:1279px) {
+        background-image:
+            url(../images/bgi_off_desk.png);
+    }
+}
+
+.offerings {
+    margin-top: 99px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid red;
+
+    &__img {
+        max-width: 580px;
+        margin-right: 90px;
+        outline: 1px solid green;
+
+    }
+
+    &__text {
+        max-width: 573px;
+        max-height: 392px;
+        margin-top: 99px;
+        outline: 1px solid blue;
+
+    }
+
+    &__item {
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: space-around;
+        outline: 2px solid tomato;
+    }
+
+    &__list {
+        margin-right: 67px;
+    }
+
+    &__icon {
+        margin-bottom: 8px;
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+.order {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.section-description {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
