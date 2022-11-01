@@ -44,6 +44,22 @@
 .footer-navigation__item {
     margin-bottom: 20px;
 
+    &:nth-child(1) {
+        width: 38px;
+    }
+    &:nth-child(2) {
+        width: 38px;
+    }
+    &:nth-child(3) {
+        width: 46px;
+    }
+    &:nth-child(4) {
+        width: 36px;
+    }
+    &:nth-child(5) {
+        width: 49px;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -54,9 +70,18 @@
 }
 
 .footer-navigation__link {
+    padding: 0;
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.14;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1),
+                font-weight .25s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover, &:focus {
+        color: var(--accent-color);
+        text-decoration: underline;
+        font-weight: 700;
+    }
 }
 
 .form-wrap {
@@ -144,9 +169,6 @@
     }
 }
 
-// .footer-form input:valid~.undertext {
-//     color: red;
-// }
 
 .mob-undertext {
     @include tablet {
@@ -155,9 +177,7 @@
 }
 
 .undertext {
-    @include phone {
         display: none;
-    }
 
     @include tablet {
         display: block;
@@ -295,6 +315,7 @@
 
     @include tablet {
         max-width: 768px;
+        background-size: auto;
         background-image: url(../images/footer-tab-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -306,6 +327,7 @@
 
     @include desk {
         max-width: 1280px;
+        background-size: auto;
         background-image: url(../images/footer-desk-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
