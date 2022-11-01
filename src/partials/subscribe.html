@@ -1,0 +1,40 @@
+<section class="section subscribe__section">
+    <div class="container subscribe__container">
+        <picture>
+            <source srcset="
+                ./images/subscribe/banana-desktop-1x.png 1x,
+                ./images/subscribe/banana-desktop-2x.png 2x
+                "
+                media="(min-width: 1280px)" 
+            />
+            <source srcset="
+                ./images/subscribe/banana-tablet-1x.png 1x,
+                ./images/subscribe/banana-tablet-2x.png 2x
+                "
+                media="(min-width: 768px)" 
+            />
+            <source srcset="
+                ./images/subscribe/banana-mobile-1x.png 1x,
+                ./images/subscribe/banana-mobile-2x.png 2x
+                "
+                media="(max-width: 767px)"
+            />
+            <img class="subscribe__img" src="./images/subscribe/banana-desktop-1x.png" alt="banan image">
+        </picture>
+        <div class="subscribe__wrap">
+            <h2 class="section-title section-title__subscribe">Subscribe To Get Special Offers</h2>
+            <p class="subscribe__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+            in eros elementum tristique.</p>
+            <form action="#" class="subscribe__form">
+                <input class="subscribe__input" type="email" name="email" placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                <p class="subscribe__input-error">&#9888; Not a valid email address (example@email.com)</p>
+                <button class="button subscribe__button" 
+                    required
+                    minlength="6"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    type="submit">Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
