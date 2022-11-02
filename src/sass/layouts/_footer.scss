@@ -315,7 +315,7 @@
 
     @include tablet {
         max-width: 768px;
-        background-size: auto;
+        background-size: contain;
         background-image: url(../images/footer-tab-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -327,7 +327,6 @@
 
     @include desk {
         max-width: 1280px;
-        background-size: auto;
         background-image: url(../images/footer-desk-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
