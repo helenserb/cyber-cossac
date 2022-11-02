@@ -3,20 +3,11 @@
     padding: 60px 0;
 }
 
-.container-hero {
-    margin: 0 auto;
-    padding: 0 16px;
-    max-width: 320px;
-}
-
 .hero__title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
 
-    color: #2C2C2C;
 
 }
 
@@ -26,35 +17,30 @@
 
 .hero__text {
     padding-right: 13px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
 
-    color: #2C2C2C;
 }
 
 .hero__btn {
     padding: 8px 20px;
     margin-top: 28px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
 
-    color: #2C2C2C;
-    background: #FFFFFF;
+    color: var(--primary-text-color);
     border-radius: 30px;
-    border: 2px solid #7EB101;
+    border: none;
+    background: var(--accent-color);
 
-    transition: border-color 300ms linear;
+    transition: background 300ms linear;
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
-    border-color: #597D00;
+    background: var(--btn-active);
 }
 
 .swiper-container {
@@ -65,11 +51,6 @@
 // tablet
 
 @media screen and (min-width: 768px) {
-    .container-hero {
-        padding: 0 32px;
-        max-width: 768px;
-    }
-
     .hero__title {
         width: 67%;
         font-size: 42px;
@@ -102,12 +83,12 @@
     }
 
     .swiper-slide__circle circle{
-        stroke: #FFE550;
+        stroke: var(--main-color);
         transition: stroke 300ms linear 150ms;
     }
 
     .swiper-slide:hover .swiper-slide__circle circle {
-        stroke: #BBF330;
+        stroke: var(--accent-color);
     }
 
     .swiper-slide__image {
@@ -120,7 +101,7 @@
     .swiper-nav {
         display: flex;
         position: absolute;
-        top: 295px;
+        top: 367px;
         z-index: 10;
     }
 
@@ -128,23 +109,23 @@
         width: 34px;
         height: 28px;
 
-        background: #FFFFFF;
+        background: var(--white-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
         border-radius: 4px;
         border: none;
     }
 
     .swiper-nav__icon path {
-        fill: #2C2C2C;
+        fill: var(--primary-text-color);
         transition: fill 300ms linear;
     }
 
     .swiper__btn:hover .swiper-nav__icon path {
-        fill: #7EB101;
+        fill: var(--additional-text-color);
     }
 
     .swiper__btn:active .swiper-nav__icon path {
-        fill: #2C2C2C;
+        fill: var(--primary-text-color);
     }
 
     .swiper__btn svg {
