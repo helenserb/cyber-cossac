@@ -313,8 +313,6 @@
     }
 
     @include tablet {
-        background-position: bottom;
-        background-size: cover;
         max-width: 768px;
         background-image: url(../images/footer-tab-BG-1x.png);
 
@@ -326,7 +324,6 @@
     }
 
     @include desk {
-        background-position: bottom;
         background-size: auto;
         max-width: 1280px;
         background-image: url(../images/footer-desk-BG-1x.png);
