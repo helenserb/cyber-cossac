@@ -1,9 +1,11 @@
+
 .section__offerings {
+    
     background-image:
         url("../images/bgi_off_mob.png");
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
 
       @media screen and (min-width:480px) {
@@ -12,59 +14,68 @@
     }
     @media screen and (min-width:768px) {
         background-image:
-            url("../images/bgi_off_desk.png");
+            url("../images/bgi_off_tab.png");
     }
+
+    @media screen and (min-width:1280px) {
+        background-image:
+        url("../images/bgi_off_desk.png");
+        }
 
       
 }
 
 .offerings {
-    margin-top: 99px;
+   
     display: flex;
     flex-wrap: wrap;
  
-
     @media screen and (max-width:767px) {
         justify-content: center;
+        padding-top: 42px;
+        padding-bottom: 60px;
+        }
+
+     @media screen and (min-width:768px) {
+        margin-top: 42px;
+        padding-bottom: 97px;
+        }
+
+          @media screen and (min-width:1280px) {
+        padding-top: 16px;
+        padding-bottom: 43px;
         }
 
     &__img {
         margin-bottom: 60px;
-  
-
+        
         @media screen and (min-width:768px) {
             max-width: 704px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
             }
 
         @media screen and (min-width:1280px) {
             max-width: 580px;
             margin-right: 90px;
-            margin-bottom: 100px;
+            margin-bottom: 0px;
             }
 
     }
 
     &__text {
-   
-        margin-bottom: 60px;
-
+        
         @media screen and (min-width:768px) {
             margin-bottom: 100px;
             }
 
         @media screen and (min-width:1280px) {
-            max-width: 573px;
             max-height: 392px;
             margin-top: 99px;
             }
-
     }
 
-    
     &__item {
         margin-top: 28px;
-        outline: 1px solid red;
 
          @media screen and (min-width:768px) {
             margin-top: 40px;
@@ -73,13 +84,16 @@
         }
     }
     &__list {
-    
-         @media screen and (max-width:767px) {
+         @media screen and (min-width:480px) {
             max-width: 252px;
            }
         }
 
     &__list:last-child {
+
+        @media screen and (max-width:767px) {
+                margin-top: 28px;
+            }
 
         @media screen and (min-width:768px) {
             margin-left: 116px;
@@ -89,8 +103,6 @@
             margin-left: 67px;
             }
     }
-       
-
         
     &__icon {
         margin-bottom: 8px;
@@ -118,16 +130,19 @@
     }
 
     &__button{
+        margin-right: 24px;
         box-sizing: border-box;
-        max-width: 106px;
+        padding: 10px 22px;
         height: 40px;
-        background: #FFFFFF;
-        border: 2px solid #7EB101;
+        background:  var(--main-bcg-color);
+        border: 2px var(--additional-text-color);
         border-radius: 30px;
 
-        &:hover{
-            background: #BBF330;
-            border: 2px solid #BBF330;
+        &:hover,
+        &:focus{
+            background:var(--accent-color);
+            border: 2px solid var(--accent-color);
+            transition: color 150ms ease-in-out;
         }
     }
 
@@ -137,50 +152,50 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.14;
-        color: #000000;
-        
+        color: var(--secondary-text-color);
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            text-decoration-line: underline;
+            transition: color 150ms ease-in-out;
+             @include font (14px, 700, 1.14);
         }
 
-    &__list-read{
-        margin-left: 24px;
-        border-radius: none;
+        }
 
-        @media screen and (min-width:1280px) {  
-            display: none;
-            }
-        
-    }
 }
-
 
 
 .section-description {
     margin-top: 16px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     color: #2C2C2C;
 }
 
 .section-title{
-    max-width: 280px;
+
+    @media screen and (min-width:480px) {
+            max-width: 280px;
+        }
 
     @media screen and (min-width:768px) {
             max-width: 526px;
         }
 }
+
 .section-subtitle{
     max-width: 280px;
     margin-top: 28px;
   
-    font-size: 16px;
-    line-height: 1.14;
-     color: #2C2C2C;
+    font-size: 14px;
+    line-height: 1.17;
+     color: var(--primary-text-color);
 
     @media screen and (min-width:768px) {
             max-width: 526px;
             margin-top: 20px;
+            font-size: 16px;
         }
  
 }
