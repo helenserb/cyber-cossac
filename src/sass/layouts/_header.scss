@@ -27,6 +27,8 @@
     width: 23px;
     height: 16px;
     fill: var(--additional-text-color);
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+
 }
 
 .header__btn {
@@ -92,7 +94,7 @@
     width: 130px;
     height: 51px;
     padding: 16px 0 0 16px;
-    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+    transition: all .25s cubic-bezier(.4, 0, .2, 1);
     display: block;
     color: inherit;
     @include font (16px, 400, 1.19);
@@ -139,6 +141,8 @@
 .navigation__link {
     height: 16px;
     color: inherit;
+    transition: color 0.25s cubic-bezier(.4, 0, .2, 1),
+        font-weight 0.25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover,
     &:focus {
@@ -153,6 +157,7 @@
 
 .button__oreder {
     border: none;
+    transition: all .25s cubic-bezier(.4, 0, .2, 1);
 
     &:active,
     &:hover {
