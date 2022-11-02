@@ -25,11 +25,14 @@
             </div>
             <div class="form-wrap">
                 <p class="form-title">Subscribe</p>
-                <form action="" class="footer-form">
-                    <input type="email" placeholder="Enter your email" required>
+                <form action="" class="footer-form" autocomplete="on">
+                    <input type="email" placeholder="Enter your email"
+                        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{3,6}$">
+                    <span class="mob-undertext">&#9888; Not a valid email address (example@email.com)</span>
                     <button type="submit" class="footer-button">
                         Subscribe
                     </button>
+                    <span class="undertext">&#9888; Not a valid email address (example@email.com)</span>
                     <p class="footer-text">By subscribing you agree to with our<a href="">Privacy Policy</a></p>
                 </form>
             </div>

@@ -1,7 +1,8 @@
 .navigation-wrapper {
     display: flex;
     margin-bottom: 40px;
-    > a {
+
+    >a {
         width: 69px;
         height: 51px;
     }
@@ -43,6 +44,22 @@
 .footer-navigation__item {
     margin-bottom: 20px;
 
+    &:nth-child(1) {
+        width: 38px;
+    }
+    &:nth-child(2) {
+        width: 38px;
+    }
+    &:nth-child(3) {
+        width: 46px;
+    }
+    &:nth-child(4) {
+        width: 36px;
+    }
+    &:nth-child(5) {
+        width: 49px;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -53,9 +70,18 @@
 }
 
 .footer-navigation__link {
+    padding: 0;
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.14;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1),
+                font-weight .25s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover, &:focus {
+        color: var(--accent-color);
+        text-decoration: underline;
+        font-weight: 700;
+    }
 }
 
 .form-wrap {
@@ -95,8 +121,13 @@
         margin-bottom: 0;
     }
 
+    span {
+        font-size: 10px;
+        line-height: 1.5;
+        color: var(--white-color);
+    }
+
     input {
-        margin-bottom: 20px;
         width: 100%;
         height: 42px;
         border: 0.854167px solid var(--main-color);
@@ -104,6 +135,25 @@
         padding-left: 12px;
         outline: none;
         background: var(--white-color);
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--primary-text-color);
+
+        &:not(:placeholder-shown):valid {
+            border: 0.854167px solid var(--additional-text-color);
+        }
+
+        &:invalid {
+            border: 0.854167px solid var(--error-color);
+
+            +.mob-undertext {
+                color: var(--error-color);
+            }
+
+            ~.undertext {
+                color: var(--error-color);
+            }
+        }
 
         &::placeholder {
             font-size: 12px;
@@ -116,6 +166,25 @@
             margin-right: 13px;
             width: 279px;
         }
+    }
+}
+
+
+.mob-undertext {
+    @include tablet {
+        display: none;
+    }
+}
+
+.undertext {
+        display: none;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desk {
+        display: block;
     }
 }
 
@@ -138,8 +207,8 @@
 
     &:hover,
     &:focus {
-            background-color: var(--main-color);
-        }
+        background-color: var(--main-color);
+    }
 
     @include tablet {
         margin-left: 0;
@@ -232,12 +301,12 @@
     margin: 0 auto;
     background: var(--main-bcg-color);
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-
+    max-width: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-image: url(../images/footer-mob-BG-1x.png);
-    
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -245,6 +314,8 @@
     }
 
     @include tablet {
+        max-width: 768px;
+        background-size: contain;
         background-image: url(../images/footer-tab-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -255,6 +326,7 @@
     }
 
     @include desk {
+        max-width: 1280px;
         background-image: url(../images/footer-desk-BG-1x.png);
 
         @media (min-device-pixel-ratio: 2),
