@@ -17,14 +17,13 @@
 
 .hero__text {
     padding-right: 13px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
 
 }
 
 .hero__btn {
-    padding: 8px 20px;
+    padding: 10px 22px;
     margin-top: 28px;
     font-weight: 500;
     font-size: 13px;
@@ -56,7 +55,7 @@
         font-size: 42px;
         line-height: 1.2;
     }
-
+    
     .hero__content {
         margin-top: 44px;
     }
@@ -78,6 +77,7 @@
         display: flex;
         flex-direction: column;
         width: 336px;
+        height: 320px;
         text-align: center;
         overflow: hidden;
     }
@@ -166,6 +166,7 @@
 
     .swiper-container {
         width: 604px;
+        height: 580px;
         position: absolute;
         right: 16px;
         top: -144px;
