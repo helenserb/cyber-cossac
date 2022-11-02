@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAIA,OAAQ,qBAAsB,CAE9BC,WAAY,CACRC,OAAQ,oBACRC,OAAQ","sources":["src/js/hero-swiper.js"],"sourcesContent":["new Swiper ('.restaurant-slider', {\n    // nav\n    navigation: {\n        nextEl: '.swiper__btn-next',\n        prevEl: '.swiper__btn-prev',\n    },\n});"],"names":["Swiper","navigation","nextEl","prevEl"],"version":3,"file":"index.5d7532ed.js.map"}
