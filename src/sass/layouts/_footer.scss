@@ -306,6 +306,7 @@
     background-position: bottom;
     background-image: url(../images/footer-mob-BG-1x.png);
 
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -313,7 +314,6 @@
     }
 
     @include tablet {
-        background-size: 785px 506px;
         max-width: 768px;
         background-image: url(../images/footer-tab-BG-1x.png);
 
