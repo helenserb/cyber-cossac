@@ -5,7 +5,7 @@
         url("../images/offerings/bgi_off_mob.png");
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     max-width: 350px;
    
@@ -157,14 +157,15 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.5;
+        color: var(--primary-text-color);
         margin-right: 24px;
         box-sizing: border-box;
         padding: 10px 22px;
-        height: 40px;
+
         background:  var(--main-bcg-color);
         border: 2px solid var(--additional-text-color);
         border-radius: 30px;
-        @include font (14px, 700, 1.14);
+
 
         &:hover,
         &:focus{
@@ -177,7 +178,7 @@
      &__link {
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
+
         font-size: 14px;
         line-height: 1.14;
         color: var(--secondary-text-color);
