@@ -8,13 +8,13 @@
     background-position: bottom;
     background-size: cover;
     max-width: 350px;
-    max-height: 1050px;
+   
 
       @media screen and (min-width:480px) {
         background-image:
             url("../images/offerings/bgi_off_mob_480.png");
             max-width: 450px;
-            height: 1050px;
+            
            
     }
     @media screen and (min-width:768px) {
@@ -22,15 +22,15 @@
             url("../images/offerings/bgi_off_tab.png");
             background-position: bottom;
             max-width:  768px;
-                height: 1140px;
+            
     }
 
     @media screen and (min-width:1280px) {
         background-image:
         url("../images/offerings/bgi_off_desk.png");
-        background-position: bottom;
+        background-position: top;
         max-width: 1280px;
-        height: 924px;
+        
         
         }
 
