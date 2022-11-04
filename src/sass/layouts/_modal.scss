@@ -54,11 +54,12 @@
   }
 }
 .modal__closebtn {
+  padding: 0;
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background-color: #ffffff;
   cursor: pointer;
   display: -webkit-box;
@@ -178,7 +179,9 @@
   font-size: 13px;
   line-height: 1.2;
   padding: 10px 30px;
+  border:2px solid var(--btn-active);
   background-color: var(--main-bcg-color);
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--btn-active);
   }
@@ -187,8 +190,8 @@
   }
 }
 .modal__close {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 .field__error {
   color: transparent;
@@ -202,6 +205,3 @@
     font-size: 13px;
   }
 }
-.agree_submintbtn:not(:placeholder-shown):invalid {
-    border-color: var(--error-color);
-  }
