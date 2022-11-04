@@ -1,0 +1,66 @@
+<section class="section__offerings">
+  <div class="container offerings">
+    <div class="offerings__img">
+      <picture>
+        <source
+          srcset="
+            ./images/offerings/appel_desk_1x.png 1x,
+            ./images/offerings/appel_desk_2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="
+            ./images/offerings/appel_tab_1x.png 1x,
+            ./images/offerings/appel_tab_2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/offerings/appel_mob_1x.png 1x,
+            ./images/offerings/appel_mob_2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="./images/offerings/appel_desk_1x.png" alt="appel" />
+      </picture>
+    </div>
+    <div class="offerings__text">
+      <h2 class="section-title">What’s Special About Our Offerings</h2>
+      <p class="section-subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__item">
+        <li class="offerings__list">
+          <svg viewBox="0 0 32 32" class="offerings__icon">
+            <use href="./svg/icons.svg#icon-deliv_off"></use>
+          </svg>
+
+          <h3 class="offerings__subtitle">Fasest Delivery</h3>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__list">
+          <svg viewBox="0 0 32 32" class="offerings__icon">
+            <use href="./svg/icons.svg#icon-order_off"></use>
+          </svg>
+          <h3 class="offerings__subtitle">Easy to order</h3>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="order">
+        <button type="button" class="order__button">Order Now</button>
+        <a href="" class="order__link link">Read More ></a>
+      </div>
+    </div>
+  </div>
+</section>
