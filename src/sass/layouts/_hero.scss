@@ -36,9 +36,9 @@
     color: var(--primary-text-color);
     border-radius: 30px;
     border: none;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 
-    transition: background 300ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__btn:hover,
@@ -88,7 +88,7 @@
 
     .swiper-slide__circle circle{
         stroke: var(--main-color);
-        transition: stroke 300ms linear 150ms;
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .swiper-slide:hover .swiper-slide__circle circle {
@@ -121,7 +121,7 @@
 
     .swiper-nav__icon path {
         fill: var(--primary-text-color);
-        transition: fill 300ms linear;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .swiper__btn:hover .swiper-nav__icon path {
