@@ -156,10 +156,14 @@
 }
 
 .button__oreder {
+    padding: 6px 0;
+    text-align: center;
+    width: 98px;
     border: none;
     transition: all .25s cubic-bezier(.4, 0, .2, 1);
 
     &:active,
+    &:focus,
     &:hover {
         background: var(--btn-active);
     }
