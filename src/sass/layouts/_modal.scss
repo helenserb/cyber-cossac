@@ -42,55 +42,55 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
   @include phone {
     width: 458px;
     height: 449px;
   }
-
   @include tablet {
     width: 458px;
     height: 449px;
   }
-}
-.modal__closebtn {
-  padding: 0;
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  background-color: #ffffff;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.modal__title {
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  display: block;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #212121;
+  &__close {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+  }
+  &__closebtn {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include tablet {
+      top: 12px;
+      right: 12px;
+    }
+  }
+  &__title {
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #212121;
 
-  @include desk {
-    line-height: 1.15;
+    @include desk {
+      line-height: 1.15;
+    }
   }
 }
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,24 +106,15 @@
   @include desk {
     max-width: 448px;
   }
+  &__title {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+    padding-left: 12px;
+  }
 }
-.form__title {
-  margin-bottom: 2px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
-  color: var(--primary-text-color);
-  padding-left: 12px;
-}
-.form__icon {
-  position: absolute;
-  height: 18px;
-  width: 18px;
-  left: 12px;
-  top: 50%;
-  fill: #212121;
-}
-
 .form__field {
   position: relative;
   display: -webkit-box;
@@ -138,9 +129,21 @@
   @include phone {
     padding: 0 32px;
   }
-   @include tablet {
+  @include tablet {
     padding: 0;
     max-width: 394px;
+  }
+}
+.field__error {
+  color: transparent;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  padding-left: 14px;
+  margin-bottom: 9px;
+  @include phone {
+    padding-left: 0;
+    font-size: 13px;
   }
 }
 .field__input {
@@ -170,7 +173,6 @@
     max-width: 394px;
   }
 }
-
 .agree__submitbtn {
   width: 106px;
   height: 40px;
@@ -179,9 +181,9 @@
   font-size: 13px;
   line-height: 1.2;
   padding: 10px 30px;
-  border:2px solid var(--additional-text-color);
+  border: 2px solid var(--additional-text-color);
   background-color: var(--main-bcg-color);
-  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--btn-active);
@@ -189,21 +191,5 @@
   &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--btn-active);
-  }
-}
-.modal__close {
-  width: 24px;
-  height: 24px;
-}
-.field__error {
-  color: transparent;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 1.4;
-  padding-left: 14px;
-  margin-bottom: 9px;
-  @include phone {
-    padding-left: 0;
-    font-size: 13px;
   }
 }
